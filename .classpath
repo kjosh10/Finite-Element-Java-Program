@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="D:/CompEng Materials/A_Sem2/OOFEM/bo-fbb-informatik-win64/lib/bo-fbb-informatik.jar" sourcepath="D:/CompEng Materials/A_Sem2/OOFEM/jnumerics-0.0.5-SNAPSHOT-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/D:/CompEng%20Materials/A_Sem2/OOFEM/bo-fbb-informatik-win64/lib/bo-fbb-informatik-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

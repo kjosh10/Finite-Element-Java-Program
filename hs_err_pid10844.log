@@ -1,0 +1,383 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffea0c8c683, pid=10844, tid=0x0000000000002178
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_301-b09) (build 1.8.0_301-b09)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.301-b09 mixed mode windows-amd64 compressed oops)
+# Problematic frame:
+# C  [vtkRenderingOpenGL2-7.1.dll+0xec683]
+#
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000001b6a3dff000):  JavaThread "AWT-EventQueue-0" [_thread_in_native, id=8568, stack(0x000000074e800000,0x000000074e900000)]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0x0000000000000078
+
+Registers:
+RAX=0x00007ffea0d81b08, RBX=0x0000000000000000, RCX=0x0000000000000000, RDX=0x00007ffea0ce69e8
+RSP=0x000000074e8fd470, RBP=0x000000074e8fd4a0, RSI=0x000001b6a4344070, RDI=0x000001b6a60154a0
+R8 =0x0000000000000000, R9 =0x000001b6a60154a0, R10=0x0000000000008000, R11=0x000000074e8fd890
+R12=0x00007ffea0ce69e8, R13=0x00007ffea0ce69e8, R14=0x000001b6a4344070, R15=0x0000000000000000
+RIP=0x00007ffea0c8c683, EFLAGS=0x0000000000010206
+
+Top of Stack: (sp=0x000000074e8fd470)
+0x000000074e8fd470:   0000000000000000 0000000000000000
+0x000000074e8fd480:   00000000000004bb 00007fff0562e3ad
+0x000000074e8fd490:   000001b68c010000 000000074e8fd4f9
+0x000000074e8fd4a0:   000001b6a642f600 000001b6a642f6e0
+0x000000074e8fd4b0:   000001b6a3fc8b00 00007ffe00000000
+0x000000074e8fd4c0:   0000000000000000 000000000000000f
+0x000000074e8fd4d0:   fffffffffffffffe 00007ffea0d82c68
+0x000000074e8fd4e0:   000000074e8fd510 0000000000000000
+0x000000074e8fd4f0:   000000074e8fd510 000000074e8fd530
+0x000000074e8fd500:   0000000000000005 00007fff0563b3c7
+0x000000074e8fd510:   00007ffeb0846fc8 000001b6a3fc9730
+0x000000074e8fd520:   fffffffffffffffe 000001b6a401d680
+0x000000074e8fd530:   000001b6a60154a0 000001b6a4344070
+0x000000074e8fd540:   0000000000000000 000001b6a642f6e0
+0x000000074e8fd550:   000000074e8fd580 00007ffea0c8c2ff
+0x000000074e8fd560:   0000000000000000 000001b68c010000 
+
+Instructions: (pc=0x00007ffea0c8c683)
+0x00007ffea0c8c663:   b5 98 00 00 00 48 89 9d a0 00 00 00 48 89 8d c0
+0x00007ffea0c8c673:   00 00 00 48 c7 85 80 00 00 00 fe ff ff ff 74 06
+0x00007ffea0c8c683:   80 79 78 00 75 15 b8 ff ff ff ff 4c 8b a5 88 00
+0x00007ffea0c8c693:   00 00 48 8d a5 b0 00 00 00 5d c3 33 ff 48 8d 4d 
+
+
+Register to memory mapping:
+
+RAX=0x00007ffea0d81b08 is an unknown value
+RBX=0x0000000000000000 is an unknown value
+RCX=0x0000000000000000 is an unknown value
+RDX=0x00007ffea0ce69e8 is an unknown value
+RSP=0x000000074e8fd470 is pointing into the stack for thread: 0x000001b6a3dff000
+RBP=0x000000074e8fd4a0 is pointing into the stack for thread: 0x000001b6a3dff000
+RSI=0x000001b6a4344070 is an unknown value
+RDI=0x000001b6a60154a0 is an unknown value
+R8 =0x0000000000000000 is an unknown value
+R9 =0x000001b6a60154a0 is an unknown value
+R10=0x0000000000008000 is an unknown value
+R11=0x000000074e8fd890 is pointing into the stack for thread: 0x000001b6a3dff000
+R12=0x00007ffea0ce69e8 is an unknown value
+R13=0x00007ffea0ce69e8 is an unknown value
+R14=0x000001b6a4344070 is an unknown value
+R15=0x0000000000000000 is an unknown value
+
+
+Stack: [0x000000074e800000,0x000000074e900000],  sp=0x000000074e8fd470,  free space=1013k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [vtkRenderingOpenGL2-7.1.dll+0xec683]
+C  [vtkRenderingOpenGL2-7.1.dll+0xec2ff]
+C  [vtkRenderingOpenGL2-7.1.dll+0xa4a9c]
+C  [vtkRenderingOpenGL2-7.1.dll+0x9b05f]
+C  [vtkRenderingOpenGL2-7.1.dll+0x99355]
+C  [vtkRenderingOpenGL2-7.1.dll+0x98cba]
+C  [vtkRenderingCore-7.1.dll+0xa77b0]
+C  [vtkRenderingOpenGL2-7.1.dll+0x2c8c2]
+C  [vtkRenderingCore-7.1.dll+0xbf61]
+C  [vtkRenderingOpenGL2-7.1.dll+0xc25ba]
+C  [vtkRenderingOpenGL2-7.1.dll+0xc10d8]
+C  [vtkRenderingCore-7.1.dll+0xb5a80]
+C  [vtkRenderingCore-7.1.dll+0xb42a9]
+C  [vtkRenderingCore-7.1.dll+0xc0465]
+C  [vtkRenderingCore-7.1.dll+0xc08af]
+C  [vtkRenderingCore-7.1.dll+0xc0e8b]
+C  [vtkRenderingCore-7.1.dll+0xbe0d5]
+C  [vtkRenderingOpenGL2-7.1.dll+0xb9a6a]
+C  0x000001b68da29fae
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  vtk.vtkRenderWindow.Render_10()V+0
+j  vtk.vtkRenderWindow.Render()V+1
+j  vtk.vtkPanel.Render()V+164
+j  inf.vtk.VTKCanvas.Render()V+91
+j  inf.vtk.VTKCanvas$1.run()V+4
+j  java.awt.event.InvocationEvent.dispatch()V+11
+j  java.awt.EventQueue.dispatchEventImpl(Ljava/awt/AWTEvent;Ljava/lang/Object;)V+21
+j  java.awt.EventQueue.access$500(Ljava/awt/EventQueue;Ljava/awt/AWTEvent;Ljava/lang/Object;)V+3
+j  java.awt.EventQueue$3.run()Ljava/lang/Void;+32
+j  java.awt.EventQueue$3.run()Ljava/lang/Object;+1
+v  ~StubRoutines::call_stub
+J 829  java.security.AccessController.doPrivileged(Ljava/security/PrivilegedAction;Ljava/security/AccessControlContext;)Ljava/lang/Object; (0 bytes) @ 0x000001b68dd3fe26 [0x000001b68dd3fdc0+0x66]
+j  java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Ljava/security/PrivilegedAction;Ljava/security/AccessControlContext;Ljava/security/AccessControlContext;)Ljava/lang/Object;+18
+j  java.awt.EventQueue.dispatchEvent(Ljava/awt/AWTEvent;)V+46
+j  java.awt.EventDispatchThread.pumpOneEventForFilters(I)V+140
+j  java.awt.EventDispatchThread.pumpEventsForFilter(ILjava/awt/Conditional;Ljava/awt/EventFilter;)V+35
+j  java.awt.EventDispatchThread.pumpEventsForHierarchy(ILjava/awt/Conditional;Ljava/awt/Component;)V+11
+j  java.awt.EventDispatchThread.pumpEvents(ILjava/awt/Conditional;)V+4
+j  java.awt.EventDispatchThread.pumpEvents(Ljava/awt/Conditional;)V+3
+j  java.awt.EventDispatchThread.run()V+9
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x000001b6a3f79000 JavaThread "Image Fetcher 0" daemon [_thread_blocked, id=10572, stack(0x000000074e900000,0x000000074ea00000)]
+=>0x000001b6a3dff000 JavaThread "AWT-EventQueue-0" [_thread_in_native, id=8568, stack(0x000000074e800000,0x000000074e900000)]
+  0x000001b6a3d56000 JavaThread "AWT-Windows" daemon [_thread_in_native, id=11492, stack(0x000000074e700000,0x000000074e800000)]
+  0x000001b6a3d4c000 JavaThread "AWT-Shutdown" [_thread_blocked, id=11172, stack(0x000000074e600000,0x000000074e700000)]
+  0x000001b6a3d3b000 JavaThread "Java2D Disposer" daemon [_thread_blocked, id=14164, stack(0x000000074e500000,0x000000074e600000)]
+  0x000001b6a271e800 JavaThread "Service Thread" daemon [_thread_blocked, id=15088, stack(0x000000074e300000,0x000000074e400000)]
+  0x000001b6a26bc000 JavaThread "C1 CompilerThread2" daemon [_thread_blocked, id=6516, stack(0x000000074e200000,0x000000074e300000)]
+  0x000001b6a26b8800 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=12628, stack(0x000000074e100000,0x000000074e200000)]
+  0x000001b6a26ae000 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=1652, stack(0x000000074e000000,0x000000074e100000)]
+  0x000001b6a26a9800 JavaThread "Attach Listener" daemon [_thread_blocked, id=12064, stack(0x000000074df00000,0x000000074e000000)]
+  0x000001b6a26a8800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=13692, stack(0x000000074de00000,0x000000074df00000)]
+  0x000001b6a2696800 JavaThread "Finalizer" daemon [_thread_blocked, id=4072, stack(0x000000074dc00000,0x000000074dd00000)]
+  0x000001b68c1ff000 JavaThread "Reference Handler" daemon [_thread_blocked, id=9384, stack(0x000000074db00000,0x000000074dc00000)]
+  0x000001b68c041000 JavaThread "main" [_thread_blocked, id=13160, stack(0x000000074d500000,0x000000074d600000)]
+
+Other Threads:
+  0x000001b6a2671800 VMThread [stack: 0x000000074da00000,0x000000074db00000] [id=14332]
+  0x000001b6a2727800 WatcherThread [stack: 0x000000074e400000,0x000000074e500000] [id=1228]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+heap address: 0x0000000082000000, size: 2016 MB, Compressed Oops mode: 32-bit
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 3
+Compressed class space size: 1073741824 Address: 0x0000000100000000
+
+Heap:
+ PSYoungGen      total 37888K, used 18624K [0x00000000d6000000, 0x00000000d8a00000, 0x0000000100000000)
+  eden space 32768K, 56% used [0x00000000d6000000,0x00000000d7230318,0x00000000d8000000)
+  from space 5120K, 0% used [0x00000000d8500000,0x00000000d8500000,0x00000000d8a00000)
+  to   space 5120K, 0% used [0x00000000d8000000,0x00000000d8000000,0x00000000d8500000)
+ ParOldGen       total 86016K, used 0K [0x0000000082000000, 0x0000000087400000, 0x00000000d6000000)
+  object space 86016K, 0% used [0x0000000082000000,0x0000000082000000,0x0000000087400000)
+ Metaspace       used 14060K, capacity 14316K, committed 14464K, reserved 1062912K
+  class space    used 1848K, capacity 1909K, committed 1920K, reserved 1048576K
+
+Card table byte_map: [0x000001b69cdd0000,0x000001b69d1d0000] byte_map_base: 0x000001b69c9c0000
+
+Marking Bits: (ParMarkBitMap*) 0x000000006e5a7fe0
+ Begin Bits: [0x000001b69d470000, 0x000001b69f3f0000)
+ End Bits:   [0x000001b69f3f0000, 0x000001b6a1370000)
+
+Polling page: 0x000001b68bfb0000
+
+CodeCache: size=245760Kb used=3469Kb max_used=3479Kb free=242290Kb
+ bounds [0x000001b68da10000, 0x000001b68dd80000, 0x000001b69ca10000]
+ total_blobs=1666 nmethods=953 adapters=626
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 2.558 Thread 0x000001b6a26bc000  948       1       java.util.logging.LogManager::access$500 (5 bytes)
+Event: 2.558 Thread 0x000001b6a26bc000 nmethod 948 0x000001b68dd70e90 code [0x000001b68dd70fe0, 0x000001b68dd710d8]
+Event: 2.558 Thread 0x000001b6a26bc000  949       1       java.util.ResourceBundle$CacheKey::hashCode (5 bytes)
+Event: 2.558 Thread 0x000001b6a26bc000 nmethod 949 0x000001b68dd70bd0 code [0x000001b68dd70d20, 0x000001b68dd70e38]
+Event: 2.559 Thread 0x000001b6a26b8800 nmethod 937 0x000001b68dd704d0 code [0x000001b68dd70620, 0x000001b68dd70958]
+Event: 2.559 Thread 0x000001b6a26bc000  950       3       java.util.HashMap$ValueIterator::next (8 bytes)
+Event: 2.559 Thread 0x000001b6a26bc000 nmethod 950 0x000001b68dd70090 code [0x000001b68dd70200, 0x000001b68dd70410]
+Event: 2.573 Thread 0x000001b6a26ae000 nmethod 947 0x000001b68dd73d90 code [0x000001b68dd73f00, 0x000001b68dd74698]
+Event: 2.880 Thread 0x000001b6a26bc000  951       3       sun.awt.AWTAutoShutdown::getInstance (4 bytes)
+Event: 2.880 Thread 0x000001b6a26bc000 nmethod 951 0x000001b68dd73a90 code [0x000001b68dd73be0, 0x000001b68dd73d18]
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (6 events):
+Event: 1.388 Thread 0x000001b68c041000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000001b68dbd3c18 method=java.lang.String.indexOf([CII[CIII)I @ 134
+Event: 1.465 Thread 0x000001b68c041000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000001b68db9b7c8 method=java.lang.String.startsWith(Ljava/lang/String;I)Z @ 25
+Event: 2.411 Thread 0x000001b68c041000 Uncommon trap: reason=class_check action=maybe_recompile pc=0x000001b68dbe8954 method=java.lang.String.equals(Ljava/lang/Object;)Z @ 8
+Event: 2.421 Thread 0x000001b68c041000 Uncommon trap: reason=class_check action=maybe_recompile pc=0x000001b68dbe8954 method=java.lang.String.equals(Ljava/lang/Object;)Z @ 8
+Event: 2.429 Thread 0x000001b68c041000 Uncommon trap: reason=class_check action=maybe_recompile pc=0x000001b68dbe8954 method=java.lang.String.equals(Ljava/lang/Object;)Z @ 8
+Event: 2.429 Thread 0x000001b68c041000 Uncommon trap: reason=class_check action=maybe_recompile pc=0x000001b68dbe8954 method=java.lang.String.equals(Ljava/lang/Object;)Z @ 8
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (10 events):
+Event: 0.298 Thread 0x000001b68c041000 Exception <a 'java/security/PrivilegedActionException'> (0x00000000d624b048) thrown at [C:\jenkins\workspace\8-2-build-windows-amd64-cygwin\jdk8u301\1513\hotspot\src\share\vm\prims\jvm.cpp, line 1523]
+Event: 0.299 Thread 0x000001b68c041000 Exception <a 'java/security/PrivilegedActionException'> (0x00000000d624eea0) thrown at [C:\jenkins\workspace\8-2-build-windows-amd64-cygwin\jdk8u301\1513\hotspot\src\share\vm\prims\jvm.cpp, line 1523]
+Event: 0.299 Thread 0x000001b68c041000 Exception <a 'java/security/PrivilegedActionException'> (0x00000000d624f0b0) thrown at [C:\jenkins\workspace\8-2-build-windows-amd64-cygwin\jdk8u301\1513\hotspot\src\share\vm\prims\jvm.cpp, line 1523]
+Event: 0.568 Thread 0x000001b68c041000 Exception <a 'java/io/FileNotFoundException'> (0x00000000d62d6988) thrown at [C:\jenkins\workspace\8-2-build-windows-amd64-cygwin\jdk8u301\1513\hotspot\src\share\vm\prims\jni.cpp, line 710]
+Event: 0.677 Thread 0x000001b68c041000 Exception <a 'java/lang/NoSuchFieldError': method resolution failed> (0x00000000d63a7088) thrown at [C:\jenkins\workspace\8-2-build-windows-amd64-cygwin\jdk8u301\1513\hotspot\src\share\vm\prims\methodHandles.cpp, line 1169]
+Event: 0.697 Thread 0x000001b68c041000 Exception <a 'java/lang/NoSuchFieldError': method resolution failed> (0x00000000d63b4458) thrown at [C:\jenkins\workspace\8-2-build-windows-amd64-cygwin\jdk8u301\1513\hotspot\src\share\vm\prims\methodHandles.cpp, line 1169]
+Event: 1.450 Thread 0x000001b68c041000 Exception <a 'java/io/FileNotFoundException'> (0x00000000d663cb58) thrown at [C:\jenkins\workspace\8-2-build-windows-amd64-cygwin\jdk8u301\1513\hotspot\src\share\vm\prims\jni.cpp, line 710]
+Event: 2.156 Thread 0x000001b68c041000 Exception <a 'java/lang/ClassCastException': java.lang.Integer cannot be cast to java.awt.Color> (0x00000000d6d21888) thrown at [C:\jenkins\workspace\8-2-build-windows-amd64-cygwin\jdk8u301\1513\hotspot\src\share\vm\interpreter\interpreterRuntime.cpp, lin
+Event: 2.156 Thread 0x000001b68c041000 Exception <a 'java/lang/ClassCastException': java.lang.Integer cannot be cast to java.awt.Color> (0x00000000d6d21b58) thrown at [C:\jenkins\workspace\8-2-build-windows-amd64-cygwin\jdk8u301\1513\hotspot\src\share\vm\interpreter\interpreterRuntime.cpp, lin
+Event: 2.156 Thread 0x000001b68c041000 Exception <a 'java/lang/ClassCastException': java.lang.Integer cannot be cast to java.awt.Color> (0x00000000d6d21e28) thrown at [C:\jenkins\workspace\8-2-build-windows-amd64-cygwin\jdk8u301\1513\hotspot\src\share\vm\interpreter\interpreterRuntime.cpp, lin
+
+Events (10 events):
+Event: 2.545 loading class sun/util/logging/resources/logging_en
+Event: 2.545 loading class sun/util/logging/resources/logging_en done
+Event: 2.546 loading class java/util/ResourceBundle$Control$1
+Event: 2.546 loading class java/util/ResourceBundle$Control$1 done
+Event: 2.547 loading class sun/util/logging/resources/logging_en_US
+Event: 2.547 loading class sun/util/logging/resources/logging_en_US done
+Event: 2.548 loading class java/util/logging/LogManager$5
+Event: 2.548 loading class java/util/logging/LogManager$5 done
+Event: 2.559 loading class java/util/logging/LogManager$RootLogger
+Event: 2.559 loading class java/util/logging/LogManager$RootLogger done
+
+
+Dynamic libraries:
+0x00007ff666650000 - 0x00007ff666697000 	C:\Program Files\Java\jre1.8.0_301\bin\javaw.exe
+0x00007fff05610000 - 0x00007fff05805000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007fff04b60000 - 0x00007fff04c1d000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007fff030f0000 - 0x00007fff033b9000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007fff04570000 - 0x00007fff0461c000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007fff03f30000 - 0x00007fff03fce000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007fff05530000 - 0x00007fff055cb000 	C:\WINDOWS\System32\sechost.dll
+0x00007fff04d50000 - 0x00007fff04e7a000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007fff040a0000 - 0x00007fff04240000 	C:\WINDOWS\System32\USER32.dll
+0x00007fff03650000 - 0x00007fff03672000 	C:\WINDOWS\System32\win32u.dll
+0x00007fff05090000 - 0x00007fff050ba000 	C:\WINDOWS\System32\GDI32.dll
+0x00007fff02ea0000 - 0x00007fff02fab000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007fff03520000 - 0x00007fff035bd000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007fff02da0000 - 0x00007fff02ea0000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffeecb30000 - 0x00007ffeecdca000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e\COMCTL32.dll
+0x00007fff03680000 - 0x00007fff036b0000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ffeef380000 - 0x00007ffeef395000 	C:\Program Files\Java\jre1.8.0_301\bin\vcruntime140.dll
+0x00007ffee6b40000 - 0x00007ffee6bdb000 	C:\Program Files\Java\jre1.8.0_301\bin\msvcp140.dll
+0x000000006ddc0000 - 0x000000006e620000 	C:\Program Files\Java\jre1.8.0_301\bin\server\jvm.dll
+0x00007fff03fd0000 - 0x00007fff03fd8000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffec4280000 - 0x00007ffec4289000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007fff04500000 - 0x00007fff0456b000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffefca80000 - 0x00007ffefcaa7000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffef9cb0000 - 0x00007ffef9cba000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007fff00c80000 - 0x00007fff00c92000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007ffefbdd0000 - 0x00007ffefbde0000 	C:\Program Files\Java\jre1.8.0_301\bin\verify.dll
+0x00007ffee7ec0000 - 0x00007ffee7eeb000 	C:\Program Files\Java\jre1.8.0_301\bin\java.dll
+0x00007ffeef270000 - 0x00007ffeef288000 	C:\Program Files\Java\jre1.8.0_301\bin\zip.dll
+0x00007fff03790000 - 0x00007fff03ecf000 	C:\WINDOWS\System32\SHELL32.dll
+0x00007fff00e80000 - 0x00007fff01611000 	C:\WINDOWS\SYSTEM32\windows.storage.dll
+0x00007fff04620000 - 0x00007fff04975000 	C:\WINDOWS\System32\combase.dll
+0x00007fff027c0000 - 0x00007fff027ec000 	C:\WINDOWS\SYSTEM32\Wldp.dll
+0x00007fff03fe0000 - 0x00007fff0408e000 	C:\WINDOWS\System32\SHCORE.dll
+0x00007fff03730000 - 0x00007fff03785000 	C:\WINDOWS\System32\shlwapi.dll
+0x00007fff02c90000 - 0x00007fff02caf000 	C:\WINDOWS\SYSTEM32\profapi.dll
+0x00007ffee3440000 - 0x00007ffee349a000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\iceb-jlapack-8.dll
+0x00007ffe8b300000 - 0x00007ffe8c35d000 	C:\Users\joshi\Anaconda3\Library\bin\mkl_rt.dll
+0x00007ffe88530000 - 0x00007ffe8b2fd000 	C:\Users\joshi\Anaconda3\Library\bin\mkl_intel_thread.dll
+0x00007ffe83d90000 - 0x00007ffe8852a000 	C:\Users\joshi\Anaconda3\Library\bin\mkl_core.dll
+0x00007ffe815a0000 - 0x00007ffe83d82000 	C:\Users\joshi\Anaconda3\Library\bin\mkl_avx2.dll
+0x00007ffe80730000 - 0x00007ffe8159d000 	C:\Users\joshi\Anaconda3\Library\bin\mkl_vml_avx2.dll
+0x00007ffecc610000 - 0x00007ffecc7a5000 	C:\Program Files\Java\jre1.8.0_301\bin\awt.dll
+0x00007fff04e80000 - 0x00007fff04f4d000 	C:\WINDOWS\System32\OLEAUT32.dll
+0x00007fff005e0000 - 0x00007fff00670000 	C:\WINDOWS\SYSTEM32\apphelp.dll
+0x00007ffee7800000 - 0x00007ffee782e000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkChartsCoreJava.dll
+0x00007ffec9000000 - 0x00007ffec9161000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkChartsCore-7.1.dll
+0x00007ffeef0d0000 - 0x00007ffeef0e6000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkRenderingContext2DJava.dll
+0x00007ffee7ea0000 - 0x00007ffee7eb5000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkWrappingJava.dll
+0x00007ffee2a40000 - 0x00007ffee2a97000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkCommonCoreJava.dll
+0x00007ffee0130000 - 0x00007ffee0174000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkRenderingContext2D-7.1.dll
+0x00007ffeb03d0000 - 0x00007ffeb086e000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkCommonCore-7.1.dll
+0x00007ffedfc50000 - 0x00007ffedfcb5000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkRenderingCoreJava.dll
+0x00007ffec8f00000 - 0x00007ffec8ff4000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkInfovisCore-7.1.dll
+0x00007ffee3280000 - 0x00007ffee32a8000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkCommonExecutionModelJava.dll
+0x00007ffecdff0000 - 0x00007ffece0ad000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkCommonExecutionModel-7.1.dll
+0x00007ffee2ed0000 - 0x00007ffee2f0b000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkCommonColor-7.1.dll
+0x00007ffeb2440000 - 0x00007ffeb2619000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkRenderingCore-7.1.dll
+0x00007ffeadcc0000 - 0x00007ffeadf83000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkFiltersGeneral-7.1.dll
+0x00007ffedfe50000 - 0x00007ffedfe9a000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkCommonTransforms-7.1.dll
+0x00007ffead8f0000 - 0x00007ffeadcc0000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkCommonDataModel-7.1.dll
+0x00007ffeccd90000 - 0x00007ffecce29000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtksys-7.1.dll
+0x00007ffead4d0000 - 0x00007ffead8e8000 	C:\Users\joshi\Anaconda3\Library\bin\libmmd.dll
+0x00007ffe7f530000 - 0x00007ffe8072a000 	C:\Users\joshi\Anaconda3\Library\bin\svml_dispmd.dll
+0x00007ffef9ec0000 - 0x00007ffef9ec7000 	C:\Program Files\Java\jre1.8.0_301\bin\jawt.dll
+0x00007ffec8cd0000 - 0x00007ffec8da1000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkFiltersExtraction-7.1.dll
+0x00007ffede7b0000 - 0x00007ffede83d000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkCommonDataModelJava.dll
+0x00007ffee2d70000 - 0x00007ffee2da3000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkCommonMisc-7.1.dll
+0x00007ffecc580000 - 0x00007ffecc602000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkFiltersGeometry-7.1.dll
+0x00007ffec87e0000 - 0x00007ffec8879000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkFiltersSources-7.1.dll
+0x00007ffed7100000 - 0x00007ffed7135000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkCommonComputationalGeometry-7.1.dll
+0x00007ffea0da0000 - 0x00007ffea119a000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkFiltersCore-7.1.dll
+0x00007ffed70c0000 - 0x00007ffed70ff000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkCommonMath-7.1.dll
+0x00007ffee2670000 - 0x00007ffee26a0000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkCommonSystem-7.1.dll
+0x00007ffec3c30000 - 0x00007ffec3cf4000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkRenderingFreeType-7.1.dll
+0x00007ffeb2bd0000 - 0x00007ffeb2c83000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkFiltersStatistics-7.1.dll
+0x00007ffeb0c20000 - 0x00007ffeb0ccc000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkfreetype-7.1.dll
+0x00007ffedfc20000 - 0x00007ffedfc4e000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkImagingFourier-7.1.dll
+0x00007ffed1c40000 - 0x00007ffed1c72000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkalglib-7.1.dll
+0x00007ffedd1c0000 - 0x00007ffedd1eb000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkzlib-7.1.dll
+0x00007ffea7750000 - 0x00007ffea79ad000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkImagingCore-7.1.dll
+0x00007ffee7690000 - 0x00007ffee76a4000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkCommonTransformsJava.dll
+0x00007ffef7eb0000 - 0x00007ffef7ec0000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkCommonMathJava.dll
+0x00007ffef6740000 - 0x00007ffef674d000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkCommonColorJava.dll
+0x00007ffef1e70000 - 0x00007ffef1e80000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkCommonComputationalGeometryJava.dll
+0x00007ffef01f0000 - 0x00007ffef01fa000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkCommonMiscJava.dll
+0x00007ffeef370000 - 0x00007ffeef37a000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkCommonSystemJava.dll
+0x00007ffeef2f0000 - 0x00007ffeef2fd000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkDomainsChemistryJava.dll
+0x00007ffecc8d0000 - 0x00007ffecc933000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkDomainsChemistry-7.1.dll
+0x00007ffece350000 - 0x00007ffece38b000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkIOXMLParser-7.1.dll
+0x00007ffeb0310000 - 0x00007ffeb03c6000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkIOCore-7.1.dll
+0x00007ffecc370000 - 0x00007ffecc3b5000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkexpat-7.1.dll
+0x00007ffeed380000 - 0x00007ffeed389000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkDomainsChemistryOpenGL2Java.dll
+0x00007ffed1cd0000 - 0x00007ffed1cf8000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkRenderingOpenGL2Java.dll
+0x00007ffecc210000 - 0x00007ffecc239000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkDomainsChemistryOpenGL2-7.1.dll
+0x00007ffea0ba0000 - 0x00007ffea0d99000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkRenderingOpenGL2-7.1.dll
+0x00007ffec8e90000 - 0x00007ffec8ef5000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkglew-7.1.dll
+0x00007ffed7380000 - 0x00007ffed74a5000 	C:\WINDOWS\SYSTEM32\OPENGL32.dll
+0x00007ffed7310000 - 0x00007ffed733c000 	C:\WINDOWS\SYSTEM32\GLU32.dll
+0x00007ffeebc10000 - 0x00007ffeebc1b000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkFiltersAMRJava.dll
+0x00007ffec55d0000 - 0x00007ffec5610000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkFiltersAMR-7.1.dll
+0x00007ffeb2b40000 - 0x00007ffeb2bcd000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkParallelCore-7.1.dll
+0x00007ffead410000 - 0x00007ffead4ce000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkIOLegacy-7.1.dll
+0x00007ffeb9520000 - 0x00007ffeb9559000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkFiltersCoreJava.dll
+0x00007ffee72b0000 - 0x00007ffee72c1000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkFiltersExtractionJava.dll
+0x00007ffecc1e0000 - 0x00007ffecc210000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkFiltersGeneralJava.dll
+0x00007ffee35e0000 - 0x00007ffee35f2000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkFiltersFlowPathsJava.dll
+0x00007ffeb0ba0000 - 0x00007ffeb0c13000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkFiltersFlowPaths-7.1.dll
+0x00007ffeeb1b0000 - 0x00007ffeeb1c0000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkFiltersGenericJava.dll
+0x00007ffeaec90000 - 0x00007ffeaecc5000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkFiltersGeneric-7.1.dll
+0x00007ffee34b0000 - 0x00007ffee34c1000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkFiltersGeometryJava.dll
+0x00007ffee3210000 - 0x00007ffee3224000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkFiltersHybridJava.dll
+0x00007ffeacfb0000 - 0x00007ffead0a4000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkFiltersHybrid-7.1.dll
+0x00007ffeaec40000 - 0x00007ffeaec87000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkImagingSources-7.1.dll
+0x00007ffee9600000 - 0x00007ffee960d000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkFiltersHyperTreeJava.dll
+0x00007ffead3c0000 - 0x00007ffead402000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkFiltersHyperTree-7.1.dll
+0x00007ffee95e0000 - 0x00007ffee95ea000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkFiltersImagingJava.dll
+0x00007ffec3c00000 - 0x00007ffec3c2c000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkFiltersImaging-7.1.dll
+0x00007ffee8950000 - 0x00007ffee895f000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkFiltersStatisticsJava.dll
+0x00007ffeac9a0000 - 0x00007ffeaca6d000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkImagingGeneral-7.1.dll
+0x00007ffee0a40000 - 0x00007ffee0a52000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkFiltersModelingJava.dll
+0x00007ffea76e0000 - 0x00007ffea7743000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkFiltersModeling-7.1.dll
+0x00007ffee01a0000 - 0x00007ffee01b2000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkFiltersParallelJava.dll
+0x00007ffea7270000 - 0x00007ffea733b000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkFiltersParallel-7.1.dll
+0x00007ffec8e70000 - 0x00007ffec8e8d000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkFiltersSourcesJava.dll
+0x00007ffee7ae0000 - 0x00007ffee7ae9000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkFiltersParallelImagingJava.dll
+0x00007ffeb9280000 - 0x00007ffeb92a0000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkFiltersParallelImaging-7.1.dll
+0x00007ffeb2420000 - 0x00007ffeb243e000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkImagingCoreJava.dll
+0x00007ffeb02f0000 - 0x00007ffeb0309000 	C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives\vtkFiltersPointsJava.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=Cp1252 
+java_command: models.SmallTetraeder
+java_class_path (initial): C:\Users\joshi\eclipse-workspace\OOFEM\bin;D:\CompEng Materials\A_Sem2\OOFEM\bo-fbb-informatik-win64\lib\bo-fbb-informatik.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:/Users/joshi/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205/jre/bin/server;C:/Users/joshi/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205/jre/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\cygwin\bin\;C:\Users\joshi\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\joshi\AppData\Local\Programs\Python\Python39\;C:\Users\joshi\Anaconda3;C:\Users\joshi\Anaconda3\Library\mingw-w64\bin;C:\Users\joshi\Anaconda3\Library\usr\bin;C:\Users\joshi\Anaconda3\Library\bin;C:\Users\joshi\Anaconda3\Scripts;C:\Users\joshi\Documents\bo-fbb-informatik-win64\lib\natives;;C:\WINDOWS\system32;
+USERNAME=joshi
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 142 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 19041 (10.0.19041.1023)
+
+CPU:total 4 (initial active 4) (2 cores per cpu, 2 threads per core) family 6 model 142 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx
+
+Memory: 4k page, physical 8253668k(1980408k free), swap 20312292k(9477584k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.301-b09) for windows-amd64 JRE (1.8.0_301-b09), built on Jun  9 2021 06:46:21 by "java_re" with MS VC++ 15.9 (VS2017)
+
+time: Tue Aug  3 15:26:53 2021
+timezone: W. Europe Daylight Time
+elapsed time: 3.393427 seconds (0d 0h 0m 3s)
+
